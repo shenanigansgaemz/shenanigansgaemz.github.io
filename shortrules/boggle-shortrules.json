@@ -1,0 +1,23 @@
+{
+    "title": "Boggle",
+    "version": "1.0",
+    "mod": "a",
+    "maintext": [
+        "# To play",
+        [
+            "Shake the grid of cubes and place it on the table. Remove the lid and push unslotted cubes into holes.",
+            "For 4 minutes: each player makes a list of 4+ letter words spelled from continuous strings of cubes on the grid, connected adjacently or diagonally, using cubes once max per word.",
+            "Players recite their lists in turn. Cross out non-Scrabble approved words and all words on more than one list.",
+            "Remaining words are worth their length minus 3 points, except affixes which are always worth 1.",
+            "Repeat until satisfied."
+        ],
+        "# Affixes",
+        [
+            "Words made by tacking common prefixes or suffixes to a base word that don't form a new word with a distinct meaning are affixes.",
+            "'Findings' is find+ing+s, and so is an affix. It's worth 1 point.",
+            "'Submarine' is sub+marine but it means something distinct from sub+marine, and so is worth the full (9 - 3 =) 6 points.",
+            "Common prefixes: de, dis, mis, out, over, pre, re, sub, un, under",
+            "Common suffixes: s, es, ed, ied, er, ier, ing, ly, y"
+        ]
+    ]
+}
