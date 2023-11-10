@@ -1,0 +1,92 @@
+{
+    "title": "Shogun",
+    "version": "1.0",
+    "modification": "-",
+    "maintext": [
+        "# To begin",
+        [
+          "Choose the sun or moon side of the big board.",
+          "3p? Cover up the 8 light-bordered provinces with their province cards.",
+          "Playing?",
+          [
+            "Get a color with matching board, army cubes, and Daimyo card.",
+            "3/4/5p? Get {18 / 15 / 12} breads.",
+            "Get a set of 5 bread cards (0 to 4).",
+            "Place army groups in each camp on the camp side of your board per the numbers shown.",
+            "Put rice reserve and honor markers at 0 on the left-side big board tracks for them."
+          ],
+          "Shuffle the province cards. Draw 2 face-up next to the stack.",
+          "Clockwise from the oldest player until all camps are placed:",
+          [
+            "[take 1 of the faceup cards / draw a card].",
+            "put a camp of armies in that province.",
+            "draw to replace taken faceup cards."
+          ],
+          "Everyone? Turn your board over.",
+          "Gather 7 of each player’s armies and 10 (farmer armies) Farmies in one hand, hovering over the BATTLE TOWER. Make a borderline racist Japanese-sounding noise then release them. Remove all armies from the tray; Farmies removed this way form the starting Farmy bank.",
+          "Draw 4 event cards for the first year faceup near the event space.",
+          "Play 2 years of seasons in order, starting with Spring."
+        ],
+        "# To win",
+        [
+          "Have the most honor after 2 years."
+        ],
+        "# In Spring, Summer and Fall",
+        [
+          "Draw 5 action cards faceup for slots 1 to 5 along the bottom of the big board. Place the rest facedown on 6 to 10.",
+          "Draw the 5 advantage cards for the 5 turn order slots.",
+          "Playing? Put 0-1 [province / bread] cards facedown on each of the 10 actions and the turn order space on your board.",
+          "Shuffle this year’s unplayed event cards and draw 1 for this season; the top of the card is in play. Put the rest faceup nearby.",
+          "Reveal all cards on turn order spaces. Revealed a bread card? Pay the shown amount to the bank. In order, highest bidder first (province cards count as half a bread, ties broken randomly): replace an advantage card with your turn order card.",
+          "In turn order: reveal the card on your board covering action 1 and take the action if possible in the province revealed.",
+          "Repeat for actions 2 to 10; reveal 6 to 10 as each becomes the active action.",
+          "Return turn order and advantage cards. Shuffle advantage and action cards. Discard the active event card. Begin the next season."
+        ],
+        "# In Winter",
+        [
+          "Playing?",
+          [
+            "Lose the rice shown on the last event card.",
+            "Lose 1 rice per province you control.",
+            "Out of rice? Using the chart on the left side of the big board: (shuffle and draw {1-3} of your province cards. Add {1-3} revolt tokens to them, then handle revolts there based on the size of the shortfall).",
+            "For each province and building you control: +1 honor.",
+          ]
+          "In each region, for each building type: control the most [theaters / temples / castles]? +{1/2/3} honor (ties give the full reward -1 to each).",
+          "Remove all revolt tokens. Set rice reserves to 0. Draw 4 new event cards.",
+          "Not Year 2? Begin the next year."
+        ],
+        "# The Actions",
+        [
+          "Pay {1/2/3} breads to build a {theater / temple / castle} in a building-free city.",
+          "Get the {rice / tax} value of the province in {reserve rice / bread}.",
+          [
+            "No revolt markers? Add one.",
+            "1+ revolt markers? __Handle a revolt__, then add 1 marker if you still own the place.",
+          ],
+          "Pay {2/3} breads to deploy {3/5} armies.",
+          "Pay 1 bread to deploy 1 army. Move 1+ armies to an adjacent province you own.",
+          "Move 1+ armies to an adjacent province. If you don’t own it, __do battle__ there.",
+        ],
+        "# To do battle / handle a revolt",
+        [
+          "Put all armies in the province and the BATTLE TOWER tray in your hand,",
+          [
+            "Neutral province? +1 Farmy.",
+            "Revolt? +1 Farmy per revolt token.",
+            "+1 army if attacker or defender has an advantage card in a player-initiated battle.",
+          ]
+          "Hover your hand menacingly above the BATTLE TOWER. Pause. Release the cubes.",
+          "Pair off and kill attacker and defender cubes; Farmies defend player provinces with no revolt tokens and die first; uninvolved cubes stay in the tray.",
+          "Remove remaining Farmies from the tray if they took a side in the fight. Put any remaining armies in the province; if there are none, remove all structures and tokens from the province.",
+          "Give the province card to whoever owns it."
+        ],
+        "# The advantage cards",
+        [
+          "+1 bread on the bread action.",
+          "+1 rice on the rice action.",
+          "Get 6 armies instead for the 5 army action.",
+          "Attacking gives you a free army for the fight.",
+          "Defending against another player gives you a free army for the fight."
+        ]
+    ]
+}
