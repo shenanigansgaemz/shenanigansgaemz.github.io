@@ -1,7 +1,6 @@
 {
     "title": "Boggle",
-    "modificationbranch": "a",
-    "revision": "1.0",
+    "version": "1.0",
     "maintext": [
         "# To play",
         [
