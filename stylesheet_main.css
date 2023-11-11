@@ -2,6 +2,7 @@ body {
 	margin:0;
 }
 
+/* Styles for the navigation bar */
 ul.nav_bar {
 	list-style-type: none;
 	margin: 0;
@@ -19,7 +20,7 @@ li.nav_bar {
 	width: 10em;
 }
 
-li.nav_bar a {
+li.nav_bar a.nav {
 	display: block;
 	padding: 14px 16px;
 	color: #eeeeee;
@@ -27,17 +28,18 @@ li.nav_bar a {
 	text-decoration: none;
 }
 
-li a.active {
+li a.active.nav {
 	background-color: #64ccc5;
 	color: white;
 	cursor:default;
 }
 
-li a:hover:not(.active) {
+li a.nav:hover:not(.active) {
 	background-color: #176b87;
 	color: white;
 }
 
+/* Styles for main page content */
 .content {
 	padding:20px;
 	margin-top:30px;
@@ -46,6 +48,7 @@ li a:hover:not(.active) {
 	color: 053b50
 }
 
+/* Styles for game cards. Could maybe be spun off into its own file and just called on main page. */
 .game_card {
 	width:1000px;
 	background-color:#d1d1d1;
@@ -72,4 +75,17 @@ li a:hover:not(.active) {
 .game_card_logo {
 	margin:20px;
 	height:40px;
+	display:block;
+}
+
+.game_links {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+}
+
+.game_link {
+	max-width: 100%;
+	height: auto;
+	display: block;
 }

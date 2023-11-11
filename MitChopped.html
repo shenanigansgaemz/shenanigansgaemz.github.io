@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<base target="_top">
-  	<style>
-  		table, th, td {
-  			border: 1px solid black;
-  		}
-  	</style>
+  	
+		<script src="https://code.jquery.com/jquery.min.js"></script>
   </head>
-
   <body>
+	<!--Navigation Bar-->
+    <div id="nav_placeholder"></div>
+		<!--Chrome won't allow jqueries on local folders this way so the bar won't load if you just open the file directory. You can get around that to test locally with a python http server.-->
+		<!--In cmd, cd to the site directory. Then run python -m http.server. Then browse to http://127.0.0.1:8000/ -->
+		<script>
+		$.get("navigation.html", function(data){
+				$("#nav_placeholder").replaceWith(data);
+		});
+		</script>
   	<? var data = getData(); ?>
   	<table>
   		<thead>

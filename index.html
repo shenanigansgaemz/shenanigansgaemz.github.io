@@ -2,27 +2,44 @@
 <html>
   <head>
     <link rel="stylesheet" href="stylesheet_main.css">
+		<script src="https://code.jquery.com/jquery.min.js"></script>
   </head>
 
   <body>
-    <ul class="nav_bar">
-    	<li class="nav_bar"><a class="active" href="index.html">Homepage</a></li>
-    	<li class="nav_bar"><a href="goals.html">Website Goals</a></li>
-      <li class="nav_bar"><a href="shortrules.html">Shortrules</a></li>
-    	<li class="nav_bar"><a href="#MitChopped">MitChopped</a></li>
-    	<li class="nav_bar"><a href="#RPG">RPGs</a></li>
-    </ul>
-
+		<!--Navigation Bar-->
+    <div id="nav_placeholder"></div>
+		<!--Chrome won't allow jqueries on local folders this way so the bar won't load if you just open the file directory. You can get around that to test locally with a python http server.-->
+		<!--In cmd, cd to the site directory. Then run python -m http.server. Then browse to http://127.0.0.1:8000/ -->
+		<script>
+		$.get("navigation.html", function(data){
+				$("#nav_placeholder").replaceWith(data);
+		});
+		</script>
+		<script>
+		$(function(){
+    var current = location.pathname;
+    $('li a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+						}
+				})
+		})
+		</script>    
     <div class="content">
     	<h1>Hello World</h1>
     	<p>I'm hosted with GitHub pages.</p>
+			<!--Game cards. Currently hardcoded, eventually will load from the database somehow.-->
     	<div class="game_card">
     		<img src="images/spirit_island.webp" class="game_card_img">
     		<h1>Spirit Island</h1>
     		<p>Island Spirits join forces using elemental powers to defend their home from invaders.</p>
-    		<a href="https://boardgamegeek.com/boardgame/162886/spirit-island" target="_blank"><img src="images/bgg_logo.svg" class="game_card_logo"></a>
-    		<a href="https://spiritislandwiki.com/index.php?title=Main_Page" target="_blank"><img src="images/si_reclaim.png" class="game_card_logo"></a>
-    		<a href="https://sick.oberien.de/?query=" target="_blank"><img src="images/si_minor.png" class="game_card_logo"></a>
+    		<div class="game_links">
+					<div class="game_link"><a href="https://boardgamegeek.com/boardgame/162886/spirit-island" target="_blank"><img src="images/bgg_logo.svg" class="game_card_logo"></a></div>
+					<div class="game_link"><a href="https://spiritislandwiki.com/index.php?title=Main_Page" target="_blank"><img src="images/si_reclaim.png" class="game_card_logo"></a></div>
+					<div class="game_link"><a href="https://sick.oberien.de/?query=" target="_blank"><img src="images/si_minor.png" class="game_card_logo"></a></div>
+				</div>
     	</div>
     	<div class="game_card"></div>
     </div>
