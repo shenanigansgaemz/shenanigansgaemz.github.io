@@ -50,22 +50,34 @@ li a.nav:hover:not(.active) {
 
 /* Styles for game cards. Could maybe be spun off into its own file and just called on main page. */
 .game_card {
-	width:1000px;
+	width:350px;
 	background-color:#d1d1d1;
 	margin:20px 50px;
-	height:300px;
+	height:490px;
 	border-radius:20px;
 	float:right;
 }
 
 .game_card h1 {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.game_card p {
+	padding:1px;
 	text-align:center;
+	margin: 5px;
 }
 
 .game_card_img {
-	float:left;
-	height:250px;
-	margin:25px;
+	width:300px;
+	margin:25px 25px 5px 25px;
 	border-color:#64ccc5;
 	border-style:solid;
 	border-width:medium;
@@ -78,8 +90,9 @@ li a.nav:hover:not(.active) {
 	display:block;
 }
 
+/*Grid for image links*/
 .game_links {
-	display: grid;
+	display: inline-grid;
 	grid-template-columns: repeat(3, 1fr);
 	place-items: center;
 }
