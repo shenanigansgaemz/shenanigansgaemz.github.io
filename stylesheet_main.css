@@ -55,7 +55,8 @@ li a.nav:hover:not(.active) {
 	margin:20px 50px;
 	height:490px;
 	border-radius:20px;
-	float:right;
+	float:left;
+	box-shadow: 1px 1px 5px;
 }
 
 .game_card h1 {
@@ -76,12 +77,15 @@ li a.nav:hover:not(.active) {
 }
 
 .game_card_img {
-	width:300px;
-	margin:25px 25px 5px 25px;
+	width:320px;
+	height:50%;
+	object-fit:cover;
+	object-position: 0 0;
+	margin:13px 13px 5px 13px;
 	border-color:#64ccc5;
 	border-style:solid;
-	border-width:medium;
-	border-radius:20px;
+	border-width:2px;
+	border-radius:20px 20px 0px 0px;
 }
 
 .game_card_logo {
