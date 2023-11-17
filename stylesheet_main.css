@@ -70,7 +70,7 @@ li a.nav:hover:not(.active) {
     border: 0;
 }
 
-.game_card p {
+p.description {
 	padding:1px;
 	text-align:center;
 	margin: 5px;
@@ -94,11 +94,43 @@ li a.nav:hover:not(.active) {
 	display:block;
 }
 
+/*Flexbox for game specifications*/
+.game_specs {
+	display: flex;
+	flex-direction: row;
+	width: 320px;
+	padding-left: 15px;
+	padding-right: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+.game_specs > div {
+	margin: 10px;
+	text-align: center;
+}
+
+i.material-icons {
+	text-align: center;
+	width: 100%;
+	font-size: 3em;
+	color: #053b50;
+}
+
+p.game_spec_text {
+	text-align: center;
+	width: 100%;
+	margin-top: -5px;
+	margin-bottom: 5px;
+}
+
 /*Grid for image links*/
 .game_links {
 	display: inline-grid;
 	grid-template-columns: repeat(3, 1fr);
 	place-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .game_link {
